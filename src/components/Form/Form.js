@@ -33,6 +33,7 @@ const Form = () => {
   const handleClickClean = () => {
     setSearchTerm("");
     dispatch({ type: "CLEAN_SEARCH" });
+    localStorage.removeItem("SET_SEARCH");
   };
 
   return (
