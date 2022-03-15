@@ -1,6 +1,6 @@
 .headerContainer {
-  background-color: #df4957;
-  color: white;
+  background-color: var(--red);
+  color: var(--white);
   padding: 1rem 1.75rem;
   font-size: 0.75rem;
   letter-spacing: 1px;
@@ -10,7 +10,7 @@
 .githubIcon {
   width: 1.75rem;
   height: 1.75rem;
-  fill: white;
+  fill: var(--white);
   margin-right: 0.5rem;
 }
 .headerLogo {

@@ -1,5 +1,5 @@
 .repo {
-  color: #dc3545;
+  color: var(--red);
   font-size: 1.25rem;
 }
 .repo:hover {
@@ -9,7 +9,7 @@
   text-align: left;
 }
 .card {
-  border: 1px dotted #ccc;
+  border: 1px dotted var(--border);
   margin: 0.7rem 0;
   padding: 1rem;
 }

@@ -1,5 +1,5 @@
 .card {
-  border: 1px dotted #ccc;
+  border: 1px dotted var(--border);
   margin: 0.7rem 0;
   padding: 1rem;
   text-align: center;
@@ -12,21 +12,21 @@
   border-radius: 6px;
 }
 .tagRed {
-  color: #fff;
-  background: #dc3545;
+  color: var(--white);
+  background: var(--red);
 }
 .tagLight {
-  border: 1px solid #ccc;
-  color: #333;
-  background: #f4f4f4;
+  border: 1px solid var(--border);
+  color: var(--dark);
+  background: var(--white-100);
 }
 .tagGreen {
-  background: #28a745;
-  color: #fff;
+  background: var(--green);
+  color: var(--white);
 }
 .tagDark {
-  background: #333;
-  color: #fff;
+  background: var(--dark);
+  color: var(--white);
 }
 .tagP {
   font-size: 1rem;

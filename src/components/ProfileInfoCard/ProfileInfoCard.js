@@ -5,15 +5,15 @@ const ProfileInfoCard = ({
 }) => {
   return (
     <div className={`${styled.infoSectionContainer} ${styled.card}`}>
-      <div className={`${styled.imgName}`}>
-        <img className={`${styled.profileImg}`} src={avatar_url} />
+      <div className={styled.imgName}>
+        <img className={styled.profileImg} src={avatar_url} />
         <p>{name}</p>
         <p>{location}</p>
       </div>
-      <div className={`${styled.moreInfo}`}>
+      <div className={styled.moreInfo}>
         <>
           <h2>Bio :</h2>
-          <p className={`${styled.pBio}`}>
+          <p className={styled.pBio}>
             {bio ?? "This user didn't provide any bio!"}
           </p>
         </>

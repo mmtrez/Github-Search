@@ -1,17 +1,17 @@
 .btnLight {
-  background: #f4f4f4;
-  color: #333;
+  background: var(--white-100);
+  color: var(--dark);
   margin-right: 0.5rem;
 }
 
 .hireableIcon {
   width: 18px;
   height: 18px;
-  fill: #28a745;
+  fill: var(--green);
   margin-left: 0.5rem;
 }
 .notHireableIcon {
-  fill: #dc3545;
+  fill: var(--red);
   width: 18px;
   height: 18px;
   margin-left: 0.5rem;

@@ -6,7 +6,7 @@
   align-items: flex-start;
 }
 .card {
-  border: 1px dotted #ccc;
+  border: 1px dotted var(--border);
   margin: 0.7rem 0;
   padding: 1rem;
 }
@@ -27,11 +27,11 @@
   margin-top: 0.5rem;
 }
 .btnDark {
-  background: #333;
-  color: #fff;
+  background: var(--dark);
+  color: var(--white);
 }
 .btnDark:hover {
-  color: #666;
+  color: var(--dark-gray);
 }
 .my1 {
   margin: 1rem 0;

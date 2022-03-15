@@ -8,18 +8,18 @@
 .input {
   padding: 0.4rem;
   font-size: 1.2rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border);
 }
 .btnDark {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--dark);
+  color: var(--white);
 }
 .btnDark:hover {
   opacity: 0.8;
 }
 .btnLight {
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--white-100);
+  color: var(--dark);
 }
 .btnLight:hover {
   opacity: 0.8;

@@ -19,15 +19,15 @@ const ProfileContainer = () => {
         <>
           <div className={`${styled.flex} ${styled.alignCenter}`}>
             <Link to="/">
-              <button className={`${styled.btnLight}`}>Back To Search</button>
+              <button className={styled.btnLight}>Back To Search</button>
             </Link>
             {userInfo.hireable !== null && (
               <div className={`${styled.flex} ${styled.alignCenter}`}>
                 <p> hireable : </p>
                 {userInfo.hireable ? (
-                  <Check className={`${styled.hireableIcon}`} />
+                  <Check className={styled.hireableIcon} />
                 ) : (
-                  <Close className={`${styled.notHirableIcon}`} />
+                  <Close className={styled.notHirableIcon} />
                 )}
               </div>
             )}
