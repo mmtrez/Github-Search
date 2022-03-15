@@ -1,0 +1,42 @@
+.header-container {
+  background-color: #df4957;
+  color: white;
+  padding: 1rem 1.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.github-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: white;
+  margin-right: 0.5rem;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-item {
+  font-size: 1.1rem;
+}
+.nav-item:nth-child(1) {
+  margin-inline-end: 1.5rem;
+}
+@media (max-width: 700px) {
+  .header-container {
+    display: block;
+    text-align: center;
+  }
+  .header-logo {
+    justify-content: center;
+  }
+  .header-nav {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
