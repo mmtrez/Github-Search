@@ -99,6 +99,9 @@
 .repo-container {
   text-align: left;
 }
+.p-bio {
+  margin-top: 0.5rem;
+}
 @media (max-width: 700px) {
   .info-section-container {
     flex-direction: column;
