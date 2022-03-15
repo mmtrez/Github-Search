@@ -1,12 +1,12 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Loading from "../Loading/Loading";
-import ProfileRepoCard from "../ProfileReposCard/ProfileRepoCard";
+import ProfileRepoCard from "../ProfileRepoCard/ProfileRepoCard";
 import ProfileStatsCard from "../ProfileStatsCard/ProfileStatsCard";
 import ProfileInfoCard from "../ProfileInfoCard/ProfileInfoCard";
 import { ReactComponent as Check } from "../../assets/svg/check.svg";
 import { ReactComponent as Close } from "../../assets/svg/close.svg";
-import "./ProfileContainer.css";
+import styled from "./ProfileContainer.module.css";
 
 const ProfileContainer = () => {
   const { userInfo, repos } = useSelector((state) => state.userProfile);
@@ -17,17 +17,17 @@ const ProfileContainer = () => {
     <>
       {!loading && (
         <>
-          <div className="flex align-center">
+          <div className={`${styled.flex} ${styled.alignCenter}`}>
             <Link to="/">
-              <button className="btn btn-light">Back To Search</button>
+              <button className={`${styled.btnLight}`}>Back To Search</button>
             </Link>
             {userInfo.hireable !== null && (
-              <div className="flex align-center">
+              <div className={`${styled.flex} ${styled.alignCenter}`}>
                 <p> hireable : </p>
                 {userInfo.hireable ? (
-                  <Check className="hireable-icon" />
+                  <Check className={`${styled.hireableIcon}`} />
                 ) : (
-                  <Close className="not-hirable-icon" />
+                  <Close className={`${styled.notHirableIcon}`} />
                 )}
               </div>
             )}

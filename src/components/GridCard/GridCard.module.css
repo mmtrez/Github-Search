@@ -11,17 +11,13 @@
   margin-bottom: 0.25rem;
   object-fit: cover;
 }
-.more-btn {
+.moreBtn {
   background-color: #333;
   color: #fff;
-  outline: none;
-  border: none;
-  transition: opacity 0.2s ease-in;
-  cursor: pointer;
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
 }
-.more-btn:hover {
+.moreBtn:hover {
   opacity: 0.8;
 }

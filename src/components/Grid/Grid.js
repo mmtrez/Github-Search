@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import GridCard from "../GridCard/GridCard";
 import Loading from "../Loading/Loading";
-import "./Grid.css";
+import styled from "./Grid.module.css";
 
 const Grid = () => {
   const users = useSelector((state) => state.searchResult);
@@ -10,7 +10,7 @@ const Grid = () => {
     <>
       {loading && <Loading />}
       {!loading && (
-        <div className="grid">
+        <div className={styled.grid}>
           {users.map((user, index) => (
             <GridCard key={index} user={user} />
           ))}

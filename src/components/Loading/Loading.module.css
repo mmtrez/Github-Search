@@ -1,8 +1,8 @@
-.loading-container {
+.loadingContainer {
   width: 100px;
   height: 100px;
   margin: auto;
 }
-.loading-container img {
+.loadingContainer img {
   width: 100%;
 }

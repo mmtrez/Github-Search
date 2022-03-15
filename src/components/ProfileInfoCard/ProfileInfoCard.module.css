@@ -1,0 +1,49 @@
+.tag {
+  font-size: 0.8rem;
+}
+.infoSectionContainer {
+  display: flex;
+  align-items: flex-start;
+}
+.card {
+  border: 1px dotted #ccc;
+  margin: 0.7rem 0;
+  padding: 1rem;
+}
+.imgName {
+  margin: 0 auto 1rem;
+  width: 50%;
+  text-align: center;
+}
+.profileImg {
+  width: 150px;
+  border-radius: 50%;
+}
+.moreInfo {
+  text-align: left;
+  width: 50%;
+}
+.pBio {
+  margin-top: 0.5rem;
+}
+.btnDark {
+  background: #333;
+  color: #fff;
+}
+.btnDark:hover {
+  color: #666;
+}
+.my1 {
+  margin: 1rem 0;
+}
+@media (max-width: 700px) {
+  .infoSectionContainer {
+    flex-direction: column;
+  }
+  .moreInfo {
+    width: 100%;
+  }
+  .imgName {
+    width: 100%;
+  }
+}

@@ -1,4 +1,4 @@
-form {
+.form {
   display: flex;
   flex-direction: column;
 }
@@ -10,26 +10,17 @@ form {
   font-size: 1.2rem;
   border: 1px solid #ccc;
 }
-.btn {
-  display: inline-block;
-  padding: 0.6rem 1.3rem;
-  outline: none;
-  font-size: 1rem;
-  border: none;
-  transition: opacity 0.2s ease-in;
-  cursor: pointer;
-}
-.btn-submit {
+.btnDark {
   background-color: #333;
   color: #fff;
 }
-.btn-submit:hover {
+.btnDark:hover {
   opacity: 0.8;
 }
-.btn-clear {
+.btnLight {
   background-color: #f4f4f4;
   color: #333;
 }
-.btn-clear:hover {
+.btnLight:hover {
   opacity: 0.8;
 }

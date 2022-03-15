@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import "./GridCard.css";
+import styled from "./GridCard.module.css";
 
 const GridCard = ({ user: { login, avatar_url } }) => {
   const dispatch = useDispatch();
@@ -32,11 +32,15 @@ const GridCard = ({ user: { login, avatar_url } }) => {
   };
 
   return (
-    <div className="card">
-      <img className="rounded" src={avatar_url} alt="user profile picture" />
+    <div className={styled.card}>
+      <img
+        className={styled.rounded}
+        src={avatar_url}
+        alt="user profile picture"
+      />
       <h3>{login}</h3>
       <Link to={`/user/${login}`}>
-        <button className="more-btn" onClick={handleClickMore}>
+        <button className={styled.moreBtn} onClick={handleClickMore}>
           More
         </button>
       </Link>

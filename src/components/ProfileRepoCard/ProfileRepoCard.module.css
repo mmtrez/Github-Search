@@ -1,0 +1,15 @@
+.repo {
+  color: #dc3545;
+  font-size: 1.25rem;
+}
+.repo:hover {
+  color: #666;
+}
+.repoContainer {
+  text-align: left;
+}
+.card {
+  border: 1px dotted #ccc;
+  margin: 0.7rem 0;
+  padding: 1rem;
+}

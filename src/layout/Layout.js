@@ -1,11 +1,11 @@
 import Header from "../components/Header/Header";
-import "./Layout.css";
+import styled from "./Layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <div className="main-container">{children}</div>
+      <div className={styled.mainContainer}>{children}</div>
     </div>
   );
 };

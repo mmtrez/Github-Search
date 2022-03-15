@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import "./Form.css";
+import styled from "./Form.module.css";
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -36,19 +36,19 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styled.form} onSubmit={handleSubmit}>
       <input
-        className="item input"
+        className={`${styled.item} ${styled.input}`}
         placeholder="Search Users ..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button className="item btn btn-submit" type="submit">
+      <button className={`${styled.item} ${styled.btnDark}`} type="submit">
         Submit
       </button>
       {users.length !== 0 && (
         <button
-          className="item btn btn-clear"
+          className={`${styled.item} ${styled.btnLight}`}
           type="reset"
           onClick={handleClickClean}
         >

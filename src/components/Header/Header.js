@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Github } from "../../assets/svg/github-brands.svg";
-import "./Header.css";
+import styled from "./Header.module.css";
 const Header = () => {
   return (
-    <div className="header-container">
-      <div className="header-logo">
-        <Github className="github-icon" />
+    <div className={styled.headerContainer}>
+      <div className={styled.headerLogo}>
+        <Github className={styled.githubIcon} />
         <h1>Github Search</h1>
       </div>
-      <div className="header-nav">
-        <Link to="/" className="nav-item">
+      <div className={styled.headerNav}>
+        <Link to="/" className={styled.navItem}>
           Home
         </Link>
-        <Link to="about" className="nav-item">
+        <Link to="about" className={styled.navItem}>
           About
         </Link>
       </div>

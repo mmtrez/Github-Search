@@ -1,0 +1,33 @@
+.card {
+  border: 1px dotted #ccc;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  text-align: center;
+}
+.tag {
+  display: inline-block;
+  padding: 0 0.9rem;
+  text-align: center;
+  margin: 0.3rem;
+  border-radius: 6px;
+}
+.tagRed {
+  color: #fff;
+  background: #dc3545;
+}
+.tagLight {
+  border: 1px solid #ccc;
+  color: #333;
+  background: #f4f4f4;
+}
+.tagGreen {
+  background: #28a745;
+  color: #fff;
+}
+.tagDark {
+  background: #333;
+  color: #fff;
+}
+.tagP {
+  font-size: 1rem;
+}
