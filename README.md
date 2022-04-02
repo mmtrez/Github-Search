@@ -6,5 +6,5 @@ You can search for pages, and it return the result from github api, you can also
 - Modular Css
 - LocalStorage
 
-#### Check out the web app here :
+### Check out the web app here :
 https://mmtrez-githubsearch.vercel.app/
